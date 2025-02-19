@@ -4,7 +4,8 @@ This tool is a PyQt-based application designed for image quality assessment.
 It provides various image processing functionalities such as histogram equalization, Sobel filtering, video cropping, frame extraction, and sharpness assessment of a selected region of interest (ROI). 
 
 The tool is useful for analyzing and enhancing images, particularly in applications requiring image preprocessing, feature extraction, and quality assessment.
-Features
+
+Features:
 1️⃣ Display Image
 • Allows users to open and view an image.
 • Provides basic UI controls for selecting an image file.
