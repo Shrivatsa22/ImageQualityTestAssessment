@@ -577,12 +577,16 @@ class Ui_MainWindow(QMainWindow):
         self.label_4.setPixmap(pixmap)
         self.label_4.setScaledContents(True)
     # Sharpening an image   
-    def sharpness(self):
+    
+         def sharpness(self):
         self.label_6.setVisible(True)
         self.label_14.setVisible(True)
-        second_form = SecondForm()
         
-        path = second_form.get_path()
+        
+        if not self.image_file_path:
+             print("No video file path selected")
+             return
+        path = self.image_file_path
         if path:
             self.img = cv2.imread(path)
         kernel = np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])#Sharpening Kernel Matrix
